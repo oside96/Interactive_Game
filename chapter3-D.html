@@ -1,0 +1,67 @@
+<!-- This is the view for Chapter 3 - Branch 4 -->
+<html>
+    <head>
+        <title> Interactive Story</title>
+        <link rel="icon" href="assets/Icon.png"/>
+        <link href='styles/styles.css'rel="stylesheet">
+        <script>
+            function inputController(){
+                if (input1.value == 'Axe' && input2.value == 'Canned Food' && input3.value =='Batteries & Power Bank'&& input4.value=='Board-up your windows'){
+                    parent.location='win.html';
+                }
+                else{
+                    parent.location='lose.html';
+                }
+            }
+        </script>
+    </head>
+    
+    <body style= "background-color: rgba(206, 36, 36, 0.781)";>
+        <h1> ⚠️ Try to Survive Hurricane Katrina ⚠️</h1>
+        <img src="assets/hurricane2020.jpg" width= '100%'>
+        <p>
+             This is a life and death situation and you have to pick the most 4 items you will need to keep you alive from this disaster. 
+        </p>
+        <h2>Pick 4 Items that will help you to survive this Hurricane:</h2>
+
+        <div>
+            <label>Select:</label>
+            <select id="input1">
+                <option selected>Choose...</option>
+                <option> Vaseline</option>
+                <option> Broom</option>
+                <option> Axe</option>
+            </select>
+        </div>
+        <div>
+            <label>Select:</label>
+            <select id="input2">
+                <option selected> Choose...</option>
+                <option>Canned Food</option>
+                <option> Milk </option>
+                <option> Frozen Meat</option>
+            </select>
+            </div>
+            
+            <div>
+                <label>Select:</label>
+                <select id="input3">
+                    <option selected>Choose...</option>
+                    <option>Make-up</option>
+                    <option>Batteries & Power Bank</option>
+                    <option>Swimming Pool</option>
+                </select>
+            </div>
+            <div>
+                <label>Select:</label>
+                <select id="input4">
+                    <option selected>Choose...</option>
+                    <option>Board-up your windows</option>
+                    <option> Leave your belongings at the patio  </option>
+                    <option>Tape your windows</option>
+                </select>
+            </div>
+            <input type='button' onClick="inputController()" value='Submit'>
+    </body>
+    
+</html>
